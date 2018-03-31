@@ -1,0 +1,43 @@
+.header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin-top: 100px;
+    padding: 9px 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.container .divider {
+    border-top: 1px solid #ddd;
+}
+
+.container .btn-default {
+    background-color: #f5f5f5;
+}
+
+.container .alert {
+    height: 36px;
+    padding: 7px;
+}
+
+input.form-control[readonly] {
+    background-color: #fff;
+}
+
+.three-td-table {
+    border: none;
+    width: 100%;
+}
+
+.three-td-table td {
+    width: 33.3%;
+    padding: 2px;
+}
+
+/* quick dirty fix to avoid nested forms */
+.withdrawal-fix-exit-height {
+    margin-top: -38px;
+}
