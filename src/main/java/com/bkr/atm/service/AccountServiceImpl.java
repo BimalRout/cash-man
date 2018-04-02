@@ -21,8 +21,8 @@ public class AccountServiceImpl extends BaseService implements AccountService {
     private OperationHistoryService operationHistoryService;
 
     @Autowired
-    public AccountServiceImpl(AccountRepo creditCardRepo, OperationHistoryService operationHistoryService) {
-        this.accountRepo = creditCardRepo;
+    public AccountServiceImpl(AccountRepo accountRepo, OperationHistoryService operationHistoryService) {
+        this.accountRepo = accountRepo;
         this.operationHistoryService = operationHistoryService;
     }
     
