@@ -14,16 +14,16 @@ public class UserDetailsServiceImpl extends BaseService implements UserDetailsSe
     private AccountRepo accountRepo;
 
     @Autowired
-    public UserDetailsServiceImpl(AccountRepo creditCardRepo) {
-        this.accountRepo = creditCardRepo;
+    public UserDetailsServiceImpl(AccountRepo accountRepo) {
+        this.accountRepo = accountRepo;
     }
 
     @Override
     public Accounts loadUserByUsername(String number) {
-        Accounts creditCard = accountRepo.findOne(number);
-        if (creditCard == null) {
-            throw new UsernameNotFoundException("Credit Card not found");
+        Accounts account = accountRepo.findOne(number);
+        if (account == null) {
+            throw new UsernameNotFoundException("Not a valid account");
         }
-        return creditCard;
+        return account;
     }
 }
